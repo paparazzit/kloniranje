@@ -3,6 +3,8 @@
 	--primary: #333333;
 	--secondary: #3e86d8;
 	--white: #fff;
+	--lightGray: #f7f7f7;
+	--mediumGray: #cbcbcb;
 	--fontFamily: "Source Sans Pro", sans-serif;
 	--fontSize: 16px;
 	--transition: 0.3s ease;
@@ -17,4 +19,80 @@ body {
 	font-family: var(--fontFamily);
 	font-size: var(--fontSize);
 	color: var(--primary);
+	background-color: var(--secondary);
+}
+main {
+	width: 98%;
+	margin: auto;
+	background-color: var(--white);
+}
+.container {
+	width: 70%;
+	margin: auto;
+}
+.container::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	transition: var(--transition);
+	color: var(--white);
+}
+
+/* 
+Header */
+header {
+	background-image: url(img/header.jpg);
+	height: 60vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-top: 30px;
+}
+.topBar .logo {
+	float: left;
+	background: rgba(62, 134, 216, 0.8);
+	padding: 20px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 40px;
+	color: var(--white);
+}
+.topBar .logo span {
+	font-weight: 300;
+	font-size: 1.5rem;
+	color: var(--primary);
+}
+.topBar .icons {
+	float: right;
+}
+
+/* navbar */
+nav {
+	background-color: var(--secondary);
+	position: absolute;
+	bottom: 0;
+	left: 15%;
+	text-align: center;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	margin: 0 40px;
+}
+nav ul li a {
+	color: var(--lightGray);
+	text-transform: uppercase;
+}
+.active {
+	color: var(--mediumGray);
 }
