@@ -28,7 +28,8 @@ main {
 }
 .container {
 	width: 70%;
-	margin: auto;
+	margin: 0 auto;
+	border: 1px solid black;
 }
 .container::after {
 	display: block;
@@ -41,6 +42,9 @@ a {
 a:hover {
 	transition: var(--transition);
 	color: var(--white);
+}
+.py {
+	padding: 70px 0;
 }
 
 /* 
@@ -68,8 +72,15 @@ header {
 	font-size: 1.5rem;
 	color: var(--primary);
 }
-.topBar .icons {
+.topBar .icons i {
 	float: right;
+	color: var(--secondary);
+	font-size: 1.5rem;
+	margin-left: 20px;
+	text-shadow: 0 0 2px var(--primary);
+}
+.topBar .icons i:hover {
+	color: var(--white);
 }
 
 /* navbar */
@@ -96,3 +107,28 @@ nav ul li a {
 .active {
 	color: var(--mediumGray);
 }
+
+/* intro */
+
+.intro {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid red;
+}
+
+.intro article {
+	flex: 0 0 23%;
+	border: 1px solid blue;
+}
+
+.intro article img {
+	width: 100%;
+}
+.intro h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+/* services */
