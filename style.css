@@ -31,11 +31,11 @@ main {
 	margin: 0 auto;
 	border: 1px solid black;
 }
-.container::after {
+/* .container::after {
 	display: block;
 	content: "";
 	clear: both;
-}
+} */
 a {
 	text-decoration: none;
 }
